@@ -1,7 +1,7 @@
 import { definePlugin } from "@halo-dev/console-shared";
-import HomeView from "./views/HomeView.vue";
-import { IconPlug } from "@halo-dev/components";
+import YlProView from "./views/YlProView.vue";
 import { markRaw } from "vue";
+import TablerBrandProducthunt from '~icons/tabler/brand-producthunt';
 
 export default definePlugin({
   components: {},
@@ -9,16 +9,16 @@ export default definePlugin({
     {
       parentName: "Root",
       route: {
-        path: "/example",
-        name: "Example",
-        component: HomeView,
+        path: "/ylpro",
+        name: "ylpro",
+        component: YlProView,
         meta: {
-          title: "示例页面",
+          title: "产品",
           searchable: true,
           menu: {
-            name: "示例页面",
-            group: "示例分组",
-            icon: markRaw(IconPlug),
+            name: "产品",
+            group: "content",
+            icon: markRaw(TablerBrandProducthunt),
             priority: 0,
           },
         },

@@ -6,6 +6,7 @@ import VueJsx from "@vitejs/plugin-vue-jsx";
 import Icons from "unplugin-icons/vite";
 import { HaloUIPluginBundlerKit } from "@halo-dev/ui-plugin-bundler-kit";
 
+const pluginEntryName = "plugin-ylpro";
 export default defineConfig({
   plugins: [
     Vue(),
